@@ -1,14 +1,15 @@
 <template>
-  <button class="btn font-semibold">
+  <button
+    class="btn font-semibold"
+    :class="{'shadow':type != 'basic', ' hover:shadow-lg':type != 'basic'}"
+  >
     <slot />
   </button>
 </template>
 
 <script>
 export default {
-  data() {
-    return {};
-  }
+  props: ["type"]
 };
 </script>
 

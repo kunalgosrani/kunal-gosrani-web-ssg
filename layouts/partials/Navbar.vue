@@ -24,9 +24,9 @@
           :key="index"
           class="w-full sm:w-auto sm:inline-block py-1 sm:py-0 sm:px-2"
         >
-          <nuxt-link :to="el.link">
-            <Button class="hover:bg-gray-200 text-gray-900">{{el.name}}</Button>
-          </nuxt-link>
+          <a :href="el.link">
+            <Button class="hover:bg-gray-200 text-gray-900" type="basic">{{el.name}}</Button>
+          </a>
         </li>
       </ul>
     </nav>
@@ -70,6 +70,7 @@ header {
 @media (max-width: 639.99px) {
   nav {
     display: none;
+    transition: all 0.3s;
   }
 
   #check:checked ~ nav {
