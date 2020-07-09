@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex flex-wrap justify-between items-center px-4 sm:px-10 md:px-20 py-2 bg-white bg-opacity-75 fixed w-full"
+    class="flex flex-wrap justify-between items-center px-4 sm:px-10 md:px-20 py-2 bg-white bg-opacity-75 fixed w-full shadow"
   >
     <nuxt-link to="/" class="text-2xl font-bold">Kunal Gosrani</nuxt-link>
     <input type="checkbox" id="check" class="hidden" />
