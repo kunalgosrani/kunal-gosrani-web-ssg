@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-4 sm:px-10 md:px-15 lg:px-20 xl:px-30 mx-auto justify-center">
+  <div class="container px-4 lg:px-6 xl:px-10 mx-auto justify-center">
     <section>
       <div class="flex flex-col lg:flex-row justify-between items-center">
         <div class>
@@ -10,15 +10,19 @@
               for your Startup you are at right place
             </h1>
           </div>
-          <div class="md:text-2xl mt-4 md:mt-5 font-semibold text-gray-600 uppercase tracking-wide">
+          <div
+            class="md:text-2xl mt-4 md:mt-5 font-semibold text-gray-600 dark:text-gray-500 uppercase tracking-wide"
+          >
             <span>CTO & Project Manager at</span>
-            <span class="underline">
+            <span class="underline hover:text-gray-900 dark:hover:text-gray-100">
               <a href="https://hkbyte.com" target="_blank">HKBYTE</a>
             </span>
           </div>
           <div class="my-4 md:my-5">
             <a href="#work">
-              <Button class="bg-gray-300 text-gray-900 hover:bg-gray-400 mr-1">Check Work</Button>
+              <Button
+                class="bg-gray-300 dark:bg-gray-800 text-gray-900 dark:text-gray-100 hover:bg-gray-400 dark:hover:bg-gray-700 mr-1"
+              >Check Work</Button>
             </a>
             <a href="#contact">
               <Button class="bg-blue-500 text-blue-100 hover:bg-blue-600 ml-1">Contact Now</Button>
@@ -33,16 +37,11 @@
           />
         </div>
       </div>
-      <!-- <div class="my-6">
-        <a href="" target="_blank">
-          
-        </a>
-      </div>-->
     </section>
 
     <section class="pt-20" id="about">
       <h1 class="text-3xl font-bold">About Me</h1>
-      <div class="font-bold text-gray-600 uppercase tracking-wide">
+      <div class="font-bold text-gray-600 dark:text-gray-500 uppercase tracking-wide">
         <span>BCA Graduate</span>
         &bull;
         <span>Jamnagar, India</span>
@@ -59,7 +58,7 @@
       >I have maintained, developed and launched multiple projects from scratch, carrying the development and monitoring of its' back-end and front-end codebases and UI/UX designing..</p>
 
       <br />
-      <h1 class="text-xl md:text-2xl font-bold">Repositories</h1>
+      <h1 class="text-xl md:text-2xl font-bold mb-1">Repositories</h1>
       <div class="grid grid-cols-12 gap-3">
         <ContactCard
           class="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3"
@@ -104,6 +103,46 @@
           </svg>
         </ContactCard>
       </div>
+
+      <br />
+      <h1 class="text-xl md:text-2xl font-bold mb-1">Projects</h1>
+      <div class="grid grid-cols-12 gap-3">
+        <ProjectCard
+          title="HVO Cricket"
+          subtitle="Project Manager, Backend"
+          class="col-span-12 md:col-span-6 xl:col-span-4"
+          imageUrl="images/projects/hvo-cricket.jpg"
+          link="https://osu.hkbyte.com"
+        />
+        <ProjectCard
+          title="Image Light"
+          subtitle="Project Manager, Backend"
+          class="col-span-12 md:col-span-6 xl:col-span-4"
+          imageUrl="images/projects/image-light.jpg"
+          link="https://play.google.com/store/apps/details?id=com.hkbyte.imagelight"
+        />
+        <ProjectCard
+          title="Govardhan Caterers"
+          subtitle="Project Manager, Backend"
+          class="col-span-12 md:col-span-6 xl:col-span-4"
+          imageUrl="images/projects/govardhan-caterers.jpg"
+          link="https://govardhancaterers.com"
+        />
+        <ProjectCard
+          title="Deep Consultancy"
+          subtitle="UX/UI, Frontend"
+          class="col-span-12 md:col-span-6 xl:col-span-4"
+          imageUrl="images/projects/deep-consultancy.jpg"
+          link="https://deepconsultancy.in"
+        />
+        <ProjectCard
+          title="Edufinger"
+          subtitle="Project Manager, Backend"
+          class="col-span-12 md:col-span-6 xl:col-span-4"
+          imageUrl="images/projects/edufinger.png"
+          link="https://play.google.com/store/apps/details?id=com.hkbyte.edufinger"
+        />
+      </div>
     </section>
 
     <section class="pt-20" id="contact">
@@ -111,7 +150,7 @@
       <p>Feel free to say hello!</p>
       <br />
 
-      <h1 class="text-xl md:text-2xl font-bold">Lets Chat</h1>
+      <h1 class="text-xl md:text-2xl font-bold mb-1">Lets Chat</h1>
       <div class="grid grid-cols-12 gap-3">
         <ContactCard
           class="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3"
@@ -163,7 +202,7 @@
         </ContactCard>
       </div>
       <br />
-      <h1 class="text-xl md:text-2xl font-bold">Connect</h1>
+      <h1 class="text-xl md:text-2xl font-bold mb-1">Connect</h1>
       <div class="grid grid-cols-12 gap-3">
         <ContactCard
           class="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3"
@@ -193,7 +232,7 @@
         </ContactCard>
       </div>
       <br />
-      <h1 class="text-xl md:text-2xl font-bold">Social Network</h1>
+      <h1 class="text-xl md:text-2xl font-bold mb-1">Social Network</h1>
       <div class="grid grid-cols-12 gap-3">
         <ContactCard
           class="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3"
@@ -225,7 +264,9 @@
         </ContactCard>
       </div>
     </section>
-    <hr class="mt-10" />
+
+    <hr class="mt-10 opacity-75" />
+
     <footer class="w-full text-center my-5">
       <div>
         <b>Kunal Gosrani</b>
@@ -243,6 +284,7 @@
 <script>
 import Button from "../components/Button";
 import ContactCard from "../components/ContactCard";
+import ProjectCard from "../components/ProjectCard";
 
 export default {
   components: {

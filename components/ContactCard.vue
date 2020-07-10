@@ -2,14 +2,14 @@
   <div>
     <a :href="href" target="_blank">
       <div
-        class="bg-gray-300 hover:bg-gray-400 px-4 py-3 rounded-lg flex justify-between items-center shadow hover:shadow-lg text-gray-900 transition-prop"
+        class="text-gray-900 dark:text-gray-100 bg-gray-300 dark:bg-gray-800 hover:bg-gray-400 dark:hover:bg-gray-700 px-4 py-3 rounded-lg flex justify-between items-center shadow hover:shadow-lg"
         :class="classes"
       >
         <div>
           <div class="font-bold">{{title}}</div>
-          <div>{{subTitle}}</div>
+          <div class="text-gray-800 dark:text-gray-200">{{subTitle}}</div>
         </div>
-        <div class="text-gray-800">
+        <div class="text-gray-800 dark:text-gray-200">
           <slot />
         </div>
       </div>
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style>
-.transition-props {
+a > div {
   transition: all 0.3s;
 }
 </style>

@@ -5,8 +5,28 @@
     @apply rounded-md px-4 py-2;
 }
 
+.btn-sm {
+    @apply rounded-md px-2 py-1 text-sm;
+}
+
 .icon {
-    @apply inline-block mx-1
+    @apply inline-block mx-1;
+}
+
+.backdrop-blur {
+    -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+    backdrop-filter: saturate(180%) blur(20px) !important;
+}
+
+@screen dark {
+    .dark-invert {
+        filter: invert(100%);
+    }
+    
+    .backdrop-blur {
+        -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+        backdrop-filter: saturate(180%) blur(20px) !important;
+    }
 }
 
 @tailwind utilities;
