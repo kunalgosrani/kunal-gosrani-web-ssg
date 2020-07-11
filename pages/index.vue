@@ -32,7 +32,7 @@
         <div class="pt-10">
           <img
             class="h-64 rounded-lg lg:rounded-full shadow-lg"
-            src="https://kunalgosrani.com/img/profile.jpg"
+            src="images/profile.jpg"
             alt="Kunal Gosrani Profile Picture"
           />
         </div>
